@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vision.eagle.eaglevision.Inicio">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/Name"
+                    android:hint="Ingresa tu nombre aqui "
+                    android:gravity="center_vertical|center_horizontal"
+                    android:capitalize="words"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="30sp"
+                    android:textColor="?android:attr/colorControlActivated"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="false"
+                    android:selectAllOnFocus="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/cuantasPersonas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personas: %d"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <SeekBar
+                    android:id="@+id/personas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10"
+                    android:progress="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/fecha"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dd - MMMM – yyyy" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Para que Hora:"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/hora"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HH:mm" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:text="Reservar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Start"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="IniciarSesion" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
